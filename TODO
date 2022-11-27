@@ -1,0 +1,94 @@
+** - OPTIONAL
+-> - comment/changed/done
+
+ALL 
+    - check yung <title> </title> change to Victor's Secret Hotel 
+        -> changed sa [header.php] pacheck kung iba na sa bawat page, thank you
+
+FONT
+    - change fonts 
+    - 
+    
+COLOR Palette
+    French Laundry Blue: #3a4660
+    Comfortably Tan: #c9af98
+    Peachy Kreme: #ed8a63
+    Brown Bonnet: #845007
+    Off White: #F2F2F0
+    <!-- Light Gray: #F5F5F6 -->
+    White: #FFF
+    [Source] https://www.behance.net/gallery/27898479/Desi-Shirt
+
+    Background Color:
+        White: #FFF
+            or
+        Off White: #F2F2F0
+
+    Navbar: 
+        Top
+            Background: Transparent
+            Text-color: Light Gray: #F5F5F6
+            Text-hover: Comfortably Tan: #c9af98
+            
+        When Scrolled Down: 
+            Background Color: White
+            **Text-color: Brown Bonnet: #845007
+            **Text-hover: 
+
+    Buttons:
+        -remove redundant color declaration
+        -remove unused css style of buttons
+
+        Solid Colored Buttons
+            BG: Peachy Kreme: #ed8a63
+            Text-color: White
+        Outline Colored Buttons (Kahit ano rito)
+            Peachy Kreme: #ed8a63 
+            French Laundry Blue: #3a4660
+            Brown Bonnet: #845007
+
+    Footer:
+        Background: French Laundry Blue: #3a4660
+        Text Color/Logo:  Comfortably Tan: #c9af98
+
+
+==============
+# USER SIDE 
+==============
+
+HEADER
+    - change hotel name (same font as the logo)
+        -> changed font
+
+FOOTER
+    - remove sourcecodester
+    - **depende pag sinipag (yung may links and chuchu)
+
+NAVBAR 
+    - 
+
+TAB 
+    - change favicon (maliit na logo sa tab) in header.php
+        -> changed favicon to VS Logo
+
+Add LOGIN.PHP
+
+HOME.PHP <- nasa index.php ata yung bg
+    - change landing page photo
+        -> turned into carousel
+
+
+Register
+
+
+
+
+
+
+
+CALENDAR
+    - recheck calendar sa list.php 
+        - i also made changes sa book.php for calculating the check in days 
+        - recheck if timezone is right
+
+        

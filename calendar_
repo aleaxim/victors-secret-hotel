@@ -1,0 +1,26 @@
+<?php
+$date_in = isset($_POST['date_in']) ? $_POST['date_in'] : date('Y-m-d',strtotime('+ 2 days'));
+$date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d',strtotime(' + 3 days'));
+
+// di ko alam san lalagay ituuu
+// PH timezone
+// date_default_timezone_set('Etc/GMT-8'); 
+?>
+    
+    
+    <label for="">Check-in</label>
+        <!-- <input type="text" class="form-control datepicker" name="date_in" autocomplete="off" value="<?php //echo isset($date_in) ? date("Y-m-d",strtotime($date_in)) : "" ?>"> -->
+
+        <input type="date" class="form-control " name="date_in" autocomplete="off" value="<?php echo isset($date_in) ? date("Y-m-d",strtotime($date_in)) : "" ?>"
+        min="<?php echo date('Y-m-d', strtotime("+2 day")); ?>">
+        
+        <!-- <input type="text" class="form-control datepicker" name="date_in" autocomplete="off" value="<?php //echo date('Y-m-d', strtotime("+2 day")); ?>" min="<?php //echo date('Y-m-d', strtotime("+2 day")); ?>"> -->
+        <!-- +2days auto in calendar for choosing check-in date -->
+    </div>
+    <div class="col-md-3">
+        <label for="">Check-out</label>
+        <!-- <input type="text" class="form-control datepicker" name="date_out" autocomplete="off" value="<?php //echo isset($date_out) ? date("Y-m-d",strtotime($date_out)) : "" ?>"> -->
+
+        <input type="date" class="form-control " name="date_out" autocomplete="off" value="<?php echo isset($date_out) ? date("Y-m-d",strtotime($date_out)) : "" ?>" min="<?php echo date('Y-m-d', strtotime("+3 day")); ?>">
+
+        <!-- +3days auto in calendar for choosing check-out date -->
