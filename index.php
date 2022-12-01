@@ -29,7 +29,7 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container">
                 <!-- <a class="navbar-brand js-scroll-trigger" href="./"><?php //echo $_SESSION['setting_hotel_name'] ?></a> -->
-                <img src="assets/img/Victor's Secret LOGO.png" alt="logo" class="mx-3" width="40px">
+                <img src="assets/img/VS_logo.png" alt="logo" class="mx-3" width="40px">
                 <a class="navbar-brand js-scroll-trigger" href="./" >Victor's Secret Hotel</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">

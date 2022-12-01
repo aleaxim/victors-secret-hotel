@@ -20,7 +20,7 @@
   			<div class="logo">
   				<!-- <i class="fa fa-building"></i> -->
 				<!-- added logo -->
-				<img src="assets\img\Victor's Secret LOGO.png" alt="Victor's Secret Logo" style="width:28px;height:28px;">
+				<img src="assets/img/VS_logo.png" alt="Victor's Secret Logo" style="width:28px;height:28px;">
   			</div>
   		</div>
       <div class="col-md-4 float-left text-white">
