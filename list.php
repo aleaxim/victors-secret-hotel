@@ -25,7 +25,7 @@ $gname = isset($_SESSION['name']) ? $_SESSION['name'] : '';
 				<div class="card-body">	
 						<form action="index.php?page=list" id="filter" method="POST">
 			        			<div class="row align-items-center justify-content-center">
-								<div class="col-md-">
+								<div>
 								<div class="card text-center" style="max-width: 202px;">
 								<div class="card-body">
 			        					<label for="">
@@ -35,14 +35,14 @@ $gname = isset($_SESSION['name']) ? $_SESSION['name'] : '';
 												<input type="date" class="form-control" name="date_in" autocomplete="off" value="<?php echo isset($date_in) ? date('Y-m-d', strtotime("+2 day")) : "" ?>" min="<?php echo date('Y-m-d', strtotime("+2 day")); ?>">
 								</div>
 			        			<div class="col-md-12">
-										<label for="">
-											<font face="Vollkorn" size="5px" color="#676767">Check-out Date</label>
+										<label for="date_out">
+											<font face="Open Sans" size="5px" color="#676767">Check-out Date</label>
 			        							<!-- <input type="text" class="form-control datepicker" name="date_out" autocomplete="off" value="<?php //echo isset($date_out) ? date("Y-m-d",strtotime($date_out)) : "" ?>">&nbsp; -->
 
 												<input type="date" class="form-control" name="date_out" autocomplete="off" value="<?php echo isset($date_out) ? date('Y-m-d', strtotime("+3 day")) : "" ?>" min="<?php echo date('Y-m-d', strtotime("+3 day")); ?>">
 			        			</div>
-			        			<div class="col-md-39">
-										<br><button class="btn btn-block btn-primary mt-0" ><font face="Vollkorn" size="5px" color="#FFFFFF"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>CHECK AVAILABILITY</font></button><br><br>
+			        			<div class="col-md-12">
+										<br><button class="btn btn-block mt-0" style="background-color: #7b7b7b!important; color:#fff; font-size: 1.145rem; font-family: 'Open Sans', sans-serif; "> CHECK AVAILABILITY</button><br><br>
 
        						</div></div>
 
@@ -82,11 +82,10 @@ $gname = isset($_SESSION['name']) ? $_SESSION['name'] : '';
 										<font face="Vollkorn" size="4px" color="#0D0D0D"><?php echo $cat_arr[$row['category_id']]['guestCount']; echo " persons" ?> 
 									</h4>
 									
-										<div class="align-self-end mt-10">
+										<div class="align-self-center mt-10">
 
 										<!-- ORIGINAL CODE -->
-											<button class="btn btn-primary  float-right book_now" type="button" data-id="<?php echo $row['category_id'] ?>">
-											&nbsp;&nbsp;&nbsp;<font face="Impact" size="5px" color="#FFFFF">BOOK NOW &nbsp;</font></button>
+											<button class="btn book_now mt-2" type="button" data-id="<?php echo $row['category_id'] ?>" style="background-color: #f4623a!important; color:#fff; font-size: 1rem; font-family: 'Open Sans', sans-serif; padding: 15px 40px">BOOK NOW</button>
 
 										<!-- REFERENCE for trial 1
 											<input type="button" onclick="window.location='http://google.com'" class="Redirect" value="Click Here To Redirect"/> -->

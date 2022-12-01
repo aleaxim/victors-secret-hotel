@@ -79,7 +79,7 @@ $query = $conn->query("SELECT * FROM system_settings limit 1")->fetch_array();
   			<!-- == You can logo or image herre == -->
   			<div class="logo"> 
 				<!-- added logo -->
-				<img src="assets\img\Victor's Secret LOGO.png" alt="Victor's Secret Logo" style="width:128px;height:128px;">
+				<img src="assets\img\logo\VS_Logo.png" alt="Victor's Secret Logo" style="width:128px;height:128px;">
   			</div>
   		</div>
   		<div id="login-right">

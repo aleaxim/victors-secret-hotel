@@ -150,34 +150,42 @@
         
         <div class="form-group">
             <label for="fname">First Name</label>
-            <input type="text" name="fname" class="form-control" required>
+            <input type="text" name="fname" class="form-control" required placeholder="Juan">
         </div> 
         <div class="form-group">
             <label for="lname">Last Name</label>
-            <input type="text" name="lname" class="form-control" required>
+            <input type="text" name="lname" class="form-control" required placeholder="Dela Cruz">
         </div>  
         <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+            <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>" placeholder="juancruz01">
             <span class="invalid-feedback"><?php echo $username_err; ?></span>
         </div>    
         <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" required placeholder="example@email.com">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="phone" name="phone" class="form-control" placeholder="+63 9XX XXX XXXX">
+        </div>
+        <div class="form-group">
+            <label for="email">Date of Birth</label>
+            <input type="email" name="email" class="form-control" placeholder="MM/DD/YYYY">
+        </div>
+        <div class="form-group">
             <label>Password</label>
-            <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
+            <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>" placeholder="Create password">
             <span class="invalid-feedback"><?php echo $password_err; ?></span>
         </div>
         <div class="form-group">
             <label>Confirm Password</label>
-            <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>">
+            <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" placeholder="Re-enter password">
             <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
         </div> 
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" name="email" class="form-control" required>
-        </div>
         <br>
         <div class="form-group d-grid gap-2">
-            <input type="submit" class="btn btn-primary btn-block" name="submit" value="Sign Up">
+            <input type="submit" class="btn btn-block" name="submit" value="Sign Up" style="background-color: #f4623a!important; color:#fff">
         </div><br>
         <p align="center">Already have an account? <a href="index.php?page=login">Login</a></p>
       </form>

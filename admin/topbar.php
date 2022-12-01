@@ -1,15 +1,15 @@
 <style>
 	.logo {
     margin: auto;
-    font-size: 20px;
+    /* font-size: 20px; */
     background: white;
-    padding: 5px 11px;
-    border-radius: 50% 50%;
+    padding: 8px 10px;
+    border-radius: 50%;
     color: #000000b3;
   }
   .Title{
-    font-family: 'Vollkorn', serif;
-    font-size: 24px;
+    font-family: 'Raleway', serif;
+    font-size: 1.35rem;
   }
 </style>
 
@@ -20,7 +20,7 @@
   			<div class="logo">
   				<!-- <i class="fa fa-building"></i> -->
 				<!-- added logo -->
-				<img src="assets\img\Victor's Secret LOGO.png" alt="Victor's Secret Logo" style="width:28px;height:28px;">
+				<img src="assets\img\logo\VS_Logo.png" alt="Victor's Secret Logo" style="width:28px;height:28px;">
   			</div>
   		</div>
       <div class="col-md-4 float-left text-white">
