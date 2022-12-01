@@ -99,9 +99,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <section class="page-section" style="margin-top: 8rem; margin-bottom: 8rem;">
         <div class="container">
             <div class="row align-items-center justify-content-center">
-                <div class="col-5">
+                <div class="col-8">
                 <h2><b>Login</b></h2>
-        <p>Please fill in your credentials to login.</p>
+        <!-- <p>Please fill in your credentials to login.</p> -->
 
         <?php 
         if(!empty($login_err)){
@@ -110,20 +110,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         ?>
 
                 <form action="index.php?page=login" method="post">
-                    <div class="form-group">
-                        <label>Username</label>
+                    <div class="form-group" style="display: flex; flex-direction:row;">
+                        <label>Username </label>
                         <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
                         <span class="invalid-feedback"><?php echo $username_err; ?></span>
                     </div>    
-                    <div class="form-group">
+                    <div class="form-group" style="display: flex; flex-direction:row;">
                         <label>Password</label>
                         <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
                         <span class="invalid-feedback"><?php echo $password_err; ?></span>
                     </div>
                     <div class="form-group d-grid my-2">
-                        <input type="submit" class="btn btn-success btn-block" value="Login">
+                        <input type="submit" class="btn btn-danger btn-block" value="Login">
                     </div>
-                    <p align="center">Don't have an account? <a href="index.php?page=register">Sign up</a></p>
+                    <p align="center"><a href="index.php?page=register">Sign up</a></p>
                 </form>
                 </div>
             </div>

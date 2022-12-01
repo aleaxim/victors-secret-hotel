@@ -28,7 +28,13 @@ $_GET['count'] = $count;
 
 
 ?>
-<div class="container-fluid">
+
+<style>
+	.modal-body{
+    	padding: 0;
+	}
+</style>
+<div class="container-fluid" style="padding: 0;">
 	
 	<form method="" action="" id="manage-check">
 		<input type="hidden" name="cid" value="<?php echo isset($_GET['cid']) ? $_GET['cid']: '' ?>">

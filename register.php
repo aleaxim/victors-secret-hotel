@@ -140,9 +140,9 @@
     <section class="page-section">
         <div class="container">
             <div class="row align-items-center justify-content-center">
-                <div class="col-8">
-        <h2><b>Registration</b></h2>
-        <p>Please fill this form to create an account.</p>
+                <div class="col-10">
+        <h2><b>Sign Up</b></h2>
+        <!-- <p>Please fill this form to create an account.</p> -->
         <form action="index.php?page=register" method="post"> 
        
 
@@ -150,17 +150,29 @@
         
         <div class="form-group">
             <label for="fname">First Name</label>
-            <input type="text" name="fname" class="form-control" required>
+            <input placeholder="Name" type="text" name="fname" class="form-control" required>
         </div> 
         <div class="form-group">
             <label for="lname">Last Name</label>
-            <input type="text" name="lname" class="form-control" required>
+            <input placeholder="Name" type="text" name="lname" class="form-control" required>
         </div>  
         <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+            <input placeholder="username" type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
             <span class="invalid-feedback"><?php echo $username_err; ?></span>
         </div>    
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input placeholder="Email" type="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Phone</label>
+            <input placeholder="Phone number" type="number" name="phone" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Date of Birth</label>
+            <input placeholder="Birthday" type="number" name="phone" class="form-control" required>
+        </div>
         <div class="form-group">
             <label>Password</label>
             <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
@@ -170,16 +182,12 @@
             <label>Confirm Password</label>
             <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>">
             <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
-        </div> 
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" name="email" class="form-control" required>
         </div>
         <br>
         <div class="form-group d-grid gap-2">
             <input type="submit" class="btn btn-primary btn-block" name="submit" value="Sign Up">
         </div><br>
-        <p align="center">Already have an account? <a href="index.php?page=login">Login</a></p>
+        <p align="center"><a href="index.php?page=login">Login</a></p>
       </form>
                 </div>
                 </div>

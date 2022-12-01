@@ -26,7 +26,7 @@
         <div class="toast-body text-white">
         </div>
       </div>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" style="background-color:#ff5224;">
             <div class="container">
                 <!-- <a class="navbar-brand js-scroll-trigger" href="./"><?php //echo $_SESSION['setting_hotel_name'] ?></a> -->
                 <img src="assets/img/VS_logo.png" alt="logo" class="mx-3" width="40px">

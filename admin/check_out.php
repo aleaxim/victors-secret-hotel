@@ -39,12 +39,12 @@ while($row = $room->fetch_assoc()){
 									<td class="text-center"><?php echo $room_arr[$row['room_id']]['room'] ?></td>
 									<td class="text-center"><?php echo $row['ref_no'] ?></td>
 									<?php if($row['status'] == 1): ?>
-										<td class="text-center"><span class="badge badge-warning">Checked-IN</span></td>
+										<td class="text-center"><span class="badge badge-danger">Checked-IN</span></td>
 									<?php else: ?>
 										<td class="text-center"><span class="badge badge-success">Checked-Out</span></td>
 									<?php endif; ?>
 									<td class="text-center">
-											<button class="btn btn-sm btn-primary check_out" type="button" data-id="<?php echo $row['id'] ?>">View</button>
+											<button class="btn btn-sm btn-secondary check_out" type="button" data-id="<?php echo $row['id'] ?>">View</button>
 									</td>
 								</tr>
 							<?php endwhile; ?>

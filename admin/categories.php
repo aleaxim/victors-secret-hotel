@@ -1,3 +1,9 @@
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Vollkorn&display=swap" rel="stylesheet">
+</head>
+
 <?php include('db_connect.php');?>
 
 <div class="container-fluid">
@@ -77,7 +83,7 @@
 									<td class="text-center">
 										<img src="<?php echo isset($row['cover_img']) ? '../assets/img/'.$row['cover_img'] :'' ?>" alt="" id="cimg">
 									</td>
-									<td class="">
+									<td class="" style="font-family: 'Nerko One', cursive; font-size: 1.5rem;">
 										<p>Name : <b><?php echo $row['name'] ?></b></p>
 										<p>Description : <b><?php echo $row['description'] ?></b></p>
 										<p>Guest Count : <b><?php echo $row['guestCount'] ?></b></p>

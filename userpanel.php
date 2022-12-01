@@ -82,16 +82,16 @@
                     <?php if($row['status'] == 0): ?>
                         <td ><span class="badge badge-warning">Booked</span></td>
                         <?php elseif($row['status'] == 1): ?>
-                        <td ><span class="badge badge-success">Checked-In</span></td>
+                        <td ><span class="badge badge-danger">Checked-In</span></td>
                         <?php else: ?>
-                        <td ><span class="badge badge-danger">Checked-Out</span></td>
+                        <td ><span class="badge badge-success">Checked-Out</span></td>
 						<?php endif; ?>                
                 </tr>
                 <?php endwhile; ?>
             </tbody>
             </table> 
             </div> 
-            <a href="logout.php" class="btn btn-danger m-5">Logout</a>   
+            <a href="logout.php" class="btn btn-success m-5">Logout</a>   
             </div>
             </section>
 

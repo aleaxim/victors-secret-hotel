@@ -70,10 +70,10 @@ $gname = isset($_SESSION['name']) ? $_SESSION['name'] : '';
 								</div>
 						<div class="card-body text-center">
 							<h5 class="card-title"></h5>
-							<h3><p class="card-text"><b><?php echo '<font face="Vollkorn" size="px" color="#0D0D0D">
-									₱ '.number_format($cat_arr[$row['category_id']]['price'],2) ?></b><span><font face="Vollkorn" size="5px" color="#0D0D0D">&nbsp;per day</font></p></h3>
+							<h3><p class="card-text"><b><?php echo '<font face="Vollkorn" size="4px" color="#0D0D0D">
+									₱ '.number_format($cat_arr[$row['category_id']]['price'],2) ?></b><span><font face="Vollkorn" size="4px" color="#0D0D0D">&nbsp;per day</font></p></h3>
 									<h4><b>
-										<font face="Vollkorn" size="5px" color="#0D0D0D"><?php echo $cat_arr[$row['category_id']]['name'] ?> 
+										<font face="Vollkorn" size="4px" color="#0D0D0D"><?php echo $cat_arr[$row['category_id']]['name'] ?> 
 									</b></h4>
 									<h4>
 										<font face="Vollkorn" size="4px" color="#0D0D0D"><?php echo $cat_arr[$row['category_id']]['description'] ?> 
@@ -86,7 +86,7 @@ $gname = isset($_SESSION['name']) ? $_SESSION['name'] : '';
 
 										<!-- ORIGINAL CODE -->
 											<button class="btn btn-primary  float-right book_now" type="button" data-id="<?php echo $row['category_id'] ?>">
-											&nbsp;&nbsp;&nbsp;<font face="Impact" size="5px" color="#FFFFF">BOOK NOW &nbsp;</font></button>
+											&nbsp;&nbsp;&nbsp;<font face="Impact" size="5px" color="#FFFFF">BOOK &nbsp;</font></button>
 
 										<!-- REFERENCE for trial 1
 											<input type="button" onclick="window.location='http://google.com'" class="Redirect" value="Click Here To Redirect"/> -->
